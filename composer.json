@@ -1,6 +1,7 @@
 {
 	"name": "samyan/bankcard-validator",
 	"description": "php bankcard validator",
+	"version": "1.1",
 	"keywords": [
 		"bankcard",
 		"creditcard",
