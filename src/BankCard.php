@@ -7,6 +7,7 @@ namespace Samyan;
 class BankCard
 {
     protected static $cards = [
+        // Debit cards
         'visaelectron' => [
             'type' => 'visaelectron',
             'pattern' => '/^4(026|17500|405|508|844|91[37])/',
