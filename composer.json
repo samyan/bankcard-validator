@@ -1,0 +1,32 @@
+{
+	"name": "samyan/bankcard-validator",
+	"description": "php bankcard validator",
+	"keywords": [
+		"bankcard",
+		"creditcard",
+		"creditcards",
+		"debit",
+		"credit",
+		"card",
+		"cards",
+		"validator",
+		"cvc"
+	],
+	"license": "MIT",
+	"type": "library",
+	"authors": [
+		{
+			"name": "Samuel Petrosyan",
+			"email": "spetrosyan@codeblock.pro"
+		}
+	],
+	"minimum-stability": "stable",
+	"require": {
+		"php": ">=7.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Samyan\\": "src/"
+		}
+	}
+}
