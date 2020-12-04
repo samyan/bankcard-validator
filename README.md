@@ -1,5 +1,9 @@
 # PHP Bank Card Validator
 
+[![Latest Stable Version](https://poser.pugx.org/samyan/bankcard-validator/v)](//packagist.org/packages/samyan/bankcard-validator)
+[![Total Downloads](https://poser.pugx.org/samyan/bankcard-validator/downloads)](//packagist.org/packages/samyan/bankcard-validator)
+[![License](https://poser.pugx.org/samyan/bankcard-validator/license)](//packagist.org/packages/samyan/bankcard-validator)
+
 Validates debit and credit cards numbers against regular expressions and Luhn algorithm for **PHP 7.0+**
 Also validates the CVC and the expiration date.
 Project project based on and inspired by [inacho/php-credit-card-validator](https://github.com/inacho/php-credit-card-validator)
