@@ -157,7 +157,24 @@ class BankCard
     }
 
     /**
-     * check if is valid cvc
+     * Get card type
+     *
+     * @param string $number
+     * @return string
+     */
+    protected static function getCardType(string $number): string
+    {
+        foreach (self::$cards as $type => $card) {
+            if (preg_match($card['pattern'], $number)) {
+                return $type;
+            }
+        }
+
+        return '';
+    }
+
+    /**
+     * Check if is valid cvc
      *
      * @param string $cvc
      * @param string $type
@@ -169,7 +186,7 @@ class BankCard
     }
 
     /**
-     * Is valid date
+     * Check if is valid date
      *
      * @param string $year
      * @param string $month
@@ -193,23 +210,6 @@ class BankCard
         }
 
         return true;
-    }
-
-    /**
-     * Get card type
-     *
-     * @param string $number
-     * @return string
-     */
-    protected static function getCardType(string $number): string
-    {
-        foreach (self::$cards as $type => $card) {
-            if (preg_match($card['pattern'], $number)) {
-                return $type;
-            }
-        }
-
-        return '';
     }
 
     /**
