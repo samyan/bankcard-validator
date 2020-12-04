@@ -18,7 +18,7 @@ Require the package in `composer.json`
 },
 ```
 
-## Actual suported Bank Cards
+## Actual supported Bank Cards
 **Debit cards**
 * Visa Electron
 * Maestro
