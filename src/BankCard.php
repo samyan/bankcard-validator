@@ -233,7 +233,7 @@ class BankCard
      */
     protected static function isValidPattern(string $number, string $type): bool
     {
-        return preg_match(self::$cards[$type]['pattern'], $number);
+        return (bool) preg_match(self::$cards[$type]['pattern'], $number);
     }
 
     /**
